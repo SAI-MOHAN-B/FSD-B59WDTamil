@@ -63,3 +63,20 @@ console.log(res["year"]);
 for(var i in res){
 console.log(i,res[i]);
 }
+// Nested Object:
+var res = {
+  name:"guvi geek",
+  age:24,
+  year: 2018,
+  gender:{
+    category: "male",
+    genderspecified: true
+ }
+}
+// for(var key in res){
+// console.log(key,res[key]);
+// }
+var data = res.gender
+for(var i in data){
+console.log(i,data[i]);
+}
