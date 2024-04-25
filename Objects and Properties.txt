@@ -80,3 +80,22 @@ var data = res.gender
 for(var i in data){
 console.log(i,data[i]);
 }
+
+
+
+// What is a API and How It Works??
+// API stands for Application Programming Interface
+
+var obj = {
+  name:"guvi",
+  age:23
+}
+
+
+//JSON
+// javascript Object notation
+var obj1 = {
+  "name":"guvi",
+  "age":23,
+  "year":2018
+}
