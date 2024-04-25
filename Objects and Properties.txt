@@ -38,3 +38,28 @@ object1.age = 24;
 // Delete Operation
 // Syntax: delete objectname.keyname
 delete object1.age;
+
+
+
+
+// Nested Object:
+var res = {
+  name:"guvi geek",
+  age:24,
+  year: 2018,
+ }
+// Box Method:
+// This method is helpful when you are using the for-in loop
+// Syntax: objectname["keyname"];
+// here keyname are enclosed in  double quotes
+console.log(res["year"]);
+
+//for-in loop
+// it is applicable to key:value pairs
+// it is dependent on the keys
+ // it is a unidirectional....
+// Syntax: for(var key in Object){}
+// here Object represents the Objectname
+for(var i in res){
+console.log(i,res[i]);
+}
