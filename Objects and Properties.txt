@@ -1,0 +1,40 @@
+// Array always starts with Index 0
+// It can have elements with different data types...
+// To Print the array elements we need for loop
+
+
+//Drawback: Accessibility
+var arr = ["guvi","geek",20128,45.5]
+console.log(arr[3]);
+
+// Objects
+// It is a key:value pair structure
+// Syntax: var objectname = {key:value}
+var object1 = {
+  name:"John doe",
+  age:23,
+  year:2018,
+  address: "san mateo"
+}
+// Accessibility 2 types:
+// 1 : (.) Operator
+// 2: Box Method
+
+// Dot Operator
+// Syntax: objectname.keyname
+console.log(object1.name);
+console.log(object1.year);
+
+// Inserting a new Key value Pair..
+// Syntax: objectname.keyname = value
+object1.attendance = ["mon","tue","wed"];
+console.log(object1.attendance[1]);
+object1.attendance[2] = "thur";
+
+
+//Update Operation
+object1.age = 24;
+
+// Delete Operation
+// Syntax: delete objectname.keyname
+delete object1.age;
