@@ -47,3 +47,48 @@ var mul =  function(res){
 return res;
 }
 console.log(mul("hello"));
+
+// The above functions are also called as Normal functions / Generic Functions
+// Types of Functions:
+// Anonymous
+// Arrow 
+// IIFE functions
+
+// Anonymous functions:
+// Syntax: var variable_name = function(){}
+// here we are storing the function inside the variable
+var mul =  function(res){
+return res;
+}
+console.log(mul("hello"));
+
+// IIFE: Immediatley Invoked Function Expression 
+// Syntax: (function function_name(){console.log()})()
+(function foo(){
+  console.log("hello world");
+})()
+
+// Arrow Functions
+function foo(){
+  console.log("hello");
+  return "hello world";
+}
+
+
+//if you have the single statement then there is no need of return
+// Keyword in arrow functions
+// Syntax: var variable_name = (paramaters)=>{}
+var res =()=>"hello world";
+console.log(res());
+
+// For parameters
+var data = (a,b)=>a+b;
+console.log(data(12,13));
+
+//if You have the Multiple lines of code then there is a need 
+// of return keyword..
+var data_1 = ()=>{
+console.log("hello");
+return "hello world";
+}
+
