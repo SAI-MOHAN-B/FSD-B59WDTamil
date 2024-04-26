@@ -32,3 +32,18 @@ function object_data(obj){
 return obj;
 }
 console.log(object_data({name:"guvi",age:23}));
+
+
+// The above functions are also called as Normal functions / Generic Functions
+// Types of Functions:
+// Anonymous
+// Arrow 
+// IIFE functions
+
+// Anonymous functions:
+// Syntax: var variable_name = function(){}
+// here we are storing the function inside the variable
+var mul =  function(res){
+return res;
+}
+console.log(mul("hello"));
