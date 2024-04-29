@@ -53,3 +53,13 @@ if(n<0)
 return arr.slice(0,n);  
 }
 console.log(foo([7,0,2,5]));
+
+// 2.Write a JavaScript function to get the last element of an array. 
+// Passing a parameter 'n' will return the last 'n' elements of the array..
+
+function foo(arr,n){
+ if(n == undefined)
+  return arr[arr.length-1];
+return arr.slice(-n);
+}
+console.log(foo([7,0,2,5],6));
