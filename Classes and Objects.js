@@ -24,6 +24,14 @@ constructor(color,brand){
 this.color = color;
 this.brand = brand;
 }
+getcolor(){
+return `The branc name is ${this.brand}`
+}
+// update
+setcolor(clr){
+this.color = clr
+return this.color;
+}
 }
 
 // Objects:
