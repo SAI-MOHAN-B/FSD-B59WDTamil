@@ -90,3 +90,19 @@ for(var i =0;i<data_popu.length;i++){
     console.log(`Country name:${data_popu[i].name.common} Capital: ${data_popu[i].capital}`);
 }
 }
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+var res = Object.keys(object1)
+for(var i =0;i<res.length;i++){
+  console.log(object1[res[i]]);
+}
+// for-of
+for(var element of res){
+  console.log(object1[element]);
+}
+// for-each
+res.forEach((ele)=>console.log(object1[ele]));
