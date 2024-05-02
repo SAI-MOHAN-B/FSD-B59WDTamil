@@ -55,3 +55,38 @@ var arr = [12,13,14,15];
 // the return type will be an array
 var res = arr.filter((ele)=>ele%2!=0);
 console.log(res);
+
+// reduce
+// reduce is applicable to arrays
+// it is useful when you need to take the sum of array elements.
+var arr = [11,12,13,14,15];
+// syntax: arrayname.reduce((acc,cv)=>acc+cv,0);
+// accumulator:initial value
+var res = arr.reduce((acc,cv)=>acc+cv,0);
+console.log(res);
+
+
+var request = new XMLHttpRequest();
+request.open("GET","https://restcountries.com/v3.1/all");
+request.send();
+request.onload = function(){
+var res = JSON.parse(request.response);
+console.log(res);
+// Print the details of those countries which belongs to Europe region
+var details_europe = res.filter((ele)=>ele.region == "Europe");
+console.log(details_europe);
+
+// Print the Country names, whose region belongs to Asia
+var details_asia = res.filter((ele)=>ele.region == "Asia");
+console.log(details_asia); 
+var details_data = details_asia.map((ele)=>ele.name.common);
+console.log(details_data);
+
+
+//Print the country name as well as capital of those countries who's population is greater than 1,00000
+var data_popu = res.filter((ele)=>ele.population>100000);
+console.log(data_popu);
+for(var i =0;i<data_popu.length;i++){
+    console.log(`Country name:${data_popu[i].name.common} Capital: ${data_popu[i].capital}`);
+}
+}
