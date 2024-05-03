@@ -1,0 +1,48 @@
+Module 02:
+1.HTML-CSS-Bootstrap
+Intro to HTML
+Intro to HTML
+tags elements
+a tags
+div,section article
+netlify deployment
+
+Intro to CSS
+Types of CSS
+CSS properties
+Box Model 
+Position properties
+
+Media queries
+Position properties
+Flex
+
+
+Bootstrap 4.7
+
+Project
+1. Basic Pan card Task
+2. Bootstrap Design demo
+
+HTML 5 Boiler Plate
+Self Closing as well as Non-Self Closing Tags:
+Self-Closing: They will automatically Close By Themselves:meta
+Non-Self-Closing: we have to close the tags Manually title,head,Body,p, h1-h6,span,diuv,article...
+
+Element:
+A combination of Tag + Content
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, maiores quisquam rerum mollitia reprehenderit eaque! Deserunt accusantium nihil voluptatibus esse itaque 
+    porro dolores modi possimus consequuntur! Autem obcaecati molestiae at?</p>
+    <h1>this is h1</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h4>this is h4</h4>
+    <h5>this is h5</h5>
+    <h6>this is h6</h6>
+Attributes:Additional Information to the tags
+href:Link where it has to be redirected
+target="_blank": Next tab Loading
+labels:
+it helps us to bind the input elements
+
