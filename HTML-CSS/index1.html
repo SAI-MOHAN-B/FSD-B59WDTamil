@@ -1,0 +1,159 @@
+div,section,article
+block vs inline
+Intro to CSS:
+Types of CSS:
+inline,internal,external
+Selectors
+Priorities
+
+
+div: It was introduced in HTML 4
+div stands for the division or the section in the document
+<div></div>
+
+section: Introduced in HTML5
+it's the latest version of the div:
+section means grouping
+
+article:
+it is needed during the news blogs
+
+Block Level Elements: They are always starts on the new Line
+ex: div, section,p,...
+
+Inline Elements: They always start on the same Line
+ex:span
+
+Note:
+grouping of radio Buttons
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male">
+<label for="female">Female</label>
+<input type="radio" name="gender" id="female">
+</body>
+</html>
+
+Introduction to CSS:
+CSS: cascaded style sheet
+ 3 types  of CSS:
+ 
+ Inline 
+ Internal
+ external
+
+Inline:
+they are directly applied to the HTML elements:
+using Style Attribute:
+<tag style=""></tag>
+
+Internal:
+it is used to apply for more than 1 elements:
+it is wriitren using the style tag:
+<style>
+
+</style>
+Selectors: Helps us to apply for more than one element
+class,id, tag 
+
+Syntax: Class selectors:
+.classname{
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: green;
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+        }
+
+        .main1{
+            background-color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="main">this is div</div>
+<p class="main">this is p</p>
+
+<span class="main1">this is span</span>
+<div><span class="main1">this is span</span></div>
+</body>
+</html>
+
+1. Can I apply more than 1 class selector  to the same element?
+yes
+
+id selector:
+it is applicable for a single element
+it is written using the id Attribute:
+#idname{
+
+}
+2.Can I apply both id and class selector to the same element?
+yes
+Priorities:
+id>class selector>tag selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+  div{
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  span{
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+  }
+    </style>
+</head>
+<body>
+<div>this is  div</div>
+<div> this is div 1</div>
+<span>this is span</span>
+<span>this is span2 </span>
+</body>
+</html>
+
+
+Inline css> Internal > External
+
+!important:
+To override the default Priorities
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+  .div{
+    background-color: green !important;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  span{
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+  }
+    </style>
+</head>
+<body>
+<div class="div" style="background-color: aquamarine !important; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">this is  div</div>
+</body>
+</html>
