@@ -1,0 +1,131 @@
+Box Model
+Pseudo class selectors
+display Properties:
+webkata
+Pan card Task:
+
+A box model is bacsically a Box that is wrapped around every HTML elements..
+1. Margin
+2. Border
+3. Padding
+
+A margin is a Imaginary space around a HTML element:
+it is measured in terms of px.
+syntax:margin:top right bottom left
+short hand notation
+
+Border:A thick Visible Line
+syntax:border:width,style,color
+
+
+Padding: It is a ImaginarySpace around a content
+Padding: top rigth bottom left
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+.main{
+    margin-left: 30px;
+    margin-top: 50px;
+    border-top-width: 1px;
+    border-top-style:solid;
+    border-top-color:blue;
+
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    padding: 2px 3px 4px 5px;
+    padding-left: 50px;
+    
+}
+</style>
+</head>
+<body>
+<div class="main">this is div</div>
+<p>this is p</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <td>John</td>
+            <td>23</td>
+            <td>2018</td>
+          </tr>
+          <tr>
+            <td>mary</td>
+            <td>24</td>
+            <td>2019</td>
+          </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+colspan:
+It represents How Many columns has to be folded vertically
+whenever if you apply colspan to any tag, then the columns below that will be folded vertically
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th rowspan="3">Year</th>
+            </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <td >John</td>
+            <td>23</td>
+            <td rowspan="0">2018</td>
+          </tr>
+          <tr>
+            <td>mary</td>
+            <td>24</td>
+          </tr>
+        </tbody>
+    </table>
+</body>
+</html>
