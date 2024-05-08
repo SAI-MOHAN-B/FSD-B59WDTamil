@@ -111,3 +111,56 @@ they are not getting affected by scrolling
    <div style="padding-bottom: 200%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illo, dolore cum a doloremque nostrum! Atque eius, ducimus recusandae suscipit delectus quo voluptate ea inventore quis, nulla, aperiam odit perspiciatis.</div>
 </body>
 </html>
+
+Flex:
+Flex stands for the Flexible Box:
+
+
+2 Main Components:
+Flex Containers:
+Flex Items:
+
+
+we can use the concept of flex by the display properties:
+display:flex:
+
+
+
+flex box has 5 different Properties:
+flex-direction
+justify content
+align Items
+align content
+flex wrap
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .flex-container{
+        display: flex;
+        background-color: green;
+        flex-wrap: wrap;
+        height:200px;
+
+      }
+      .flex-container > div{
+        background-color: orange;
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+</body>
+</html>
