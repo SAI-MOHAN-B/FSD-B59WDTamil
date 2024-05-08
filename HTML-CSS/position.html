@@ -1,0 +1,113 @@
+Position Properties:
+Gradients:
+Flex-Box:
+Continuing the pan card task
+
+Position Properties:
+Even Though we have Top, Right,bottom,left
+on what factors the elements has to be placed
+1. static
+2. relative
+3.absolute
+4.fixed
+5.sticky
+
+1.STATIC:
+they are not get affected by top,right,bottom,left
+By default all the elements are positioned static
+No Effects will be applied on the elements
+
+
+2. relative:
+a.they get affected by top,left,bottom,right
+b. A space is created for them in the document
+this Properties are used to place the elements with respect to the other elements
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        background-color: green;
+    }
+    .child1{
+        background-color: orange;
+        position: relative;
+        top:30px;
+    }
+    .child2{
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">this is child1</div>
+        <div class="child2">this is child2</div>
+    </div>
+</body>
+</html>
+
+absolute:
+a.they get affected by top,left,bottom,right
+b. no space is created for them in the document
+it will be positioned w.r.to first positioned elements
+
+when we are using the absolute, the parent has to be relative
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        background-color: green;
+        position: relative;
+    }
+    .child1{
+        background-color: orange;
+        position: absolute;
+        top:30px;
+        left: 32px;
+    }
+    .child2{
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">this is child1</div>
+        <div class="child2">this is child2</div>
+    </div>
+</body>
+</html>
+
+fixed: if you give a specific location,Top,right,Bottom.left
+They are not get affected by scrolling
+
+Sticky:They get affected By scrolling, Once You reach their position
+they are not getting affected by scrolling
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .main{
+        background-color: green;
+        position: sticky;
+        top:0px;
+     }
+    </style>
+</head>
+<body>
+    <div class="main">this is div</div>
+   <div style="padding-bottom: 200%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illo, dolore cum a doloremque nostrum! Atque eius, ducimus recusandae suscipit delectus quo voluptate ea inventore quis, nulla, aperiam odit perspiciatis.</div>
+</body>
+</html>
