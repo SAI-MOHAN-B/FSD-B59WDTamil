@@ -1,0 +1,92 @@
+Media Query
+Bootstrap 4.7
+
+What is Media Query:
+Media query Comes under the Category of RWD:
+RWD:Responsive web design
+syntax: @media screen and (max-width):{
+
+}
+
+Responsive can be added manually
+It is the underlying doundation for Bootstrap
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media screen and (min-width:500px) {
+        div{
+            background-color: green;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    @media  screen and (max-width:400px) {
+        div{
+            background-color: orange;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>this is div</div>
+</body>
+</html>
+
+Responsive Break Points:
+xs:Extra Small
+sm:Small
+md:medium
+lg:large
+xl:extra-large
+
+sm:small:(576-768)px:
+if your device width falls within the range of 576-768 px then
+the maxwitdh is 540px
+
+md:medium(768-992)px:
+if your device width falls within the range of 768-992 px then
+the maxwidth is 720px
+
+
+lg:large(992-1200)px:
+
+if your device width falls within the range of 992-1200 px then
+the maxwidth is 960px
+
+Responsiveness:
+col-{device width}-{ratio}
+
+
+I want to have a Responsiveness of 4:4:4 from the devices
+md and above
+lesser than that must be in stack order
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .col-4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--Bootstrap Flow Of Elements-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background-color: green;">this is col</div>
+            <div class="col-md-4" style="background-color: orange;">this is col</div>
+            <div class="col-md-4" style="background-color: yellow;">this is col</div>
+        </div>
+    </div>
+</body>
+</html>
