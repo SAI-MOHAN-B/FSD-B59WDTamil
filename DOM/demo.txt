@@ -37,3 +37,78 @@ element.setAttribute("href","https://www.google.com");
 element.setAttribute("target","_blank");
 element.innerHTML = "Click me";
 document.body.append(element);
+
+
+'
+
+var container = document.createElement("div");
+container.className = "container";
+
+var row = document.createElement("div");
+row.className = "row";
+
+var col = document.createElement("div");
+col.className = "col";
+
+
+row.append(col);
+container.append(row);
+document.body.append(container)
+
+
+
+Already You have the HTML elements, Now You need to Modify the 
+Existing elements
+
+document.getElementById("idname");
+document.getElementsByClassname("classname");
+document.getElementsByTagname("tagname");
+document.querySelector(".class/#id/tag");
+document.querySelectorAll("");
+
+
+
+document.getElementById(""):
+It is used when You wanted to retrive the elements based on the id attributes
+It returns an HTML element
+
+
+var res = document.getElementById("main").innerHTML = "Guvi Geek IITM Research Park"
+console.log(res);
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+
+<body>
+<label for="email">Email</label><br>
+<input type="email" name="" id="email">
+<button type="button" onclick="foo()">Click Me</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+function foo() {
+    var res = document.getElementById("email").value;
+    console.log(res);
+}
+
+Create a HTML form(using HTML) with the Below Details
+Firstname
+Middlename
+Lastname
+Email
+Location
+
+
+display the Collected Information in the Console.
+
+
+
