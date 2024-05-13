@@ -1,0 +1,39 @@
+DOM and Intro
+DOM methods
+Functional Based Approach
+Windows Functions and Event Listeners
+
+DOM Project
+
+DOM:Document Object Model
+
+Why do we need DOM?
+To Create the HTML elements Dynamically
+
+How  To Create the HTML elements Dynamically?
+S1:document.createElement(elementname);
+
+// Step 01:Create a HTML tag:
+var element = document.createElement("div");
+// Step 02: Add the Content:
+// innerHTML:
+//innerHTML is used to add the Content inside the HTML elements
+element.innerText = "<p>This is p</p>";
+// Step 03:Add the element  to the Body of the document
+document.body.append(element)
+
+// Note on InnerHTML:
+// innerHTML is used to parse the Element
+
+//innerText:
+// It Won't Parse
+// It will print as it is
+
+
+//setAttribute(attrname,attrvalue);
+To add the attributes to HTML elements
+var element = document.createElement("a");
+element.setAttribute("href","https://www.google.com");
+element.setAttribute("target","_blank");
+element.innerHTML = "Click me";
+document.body.append(element);
