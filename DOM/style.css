@@ -1,0 +1,11 @@
+.main{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#dob{
+    width:40%;
+}
+button{
+    margin:10px;
+}
