@@ -1,0 +1,65 @@
+callback
+promise
+fetch 
+async and await
+
+Project
+
+Callback:
+What is the Diff Between synchronous vs Asynchronous?
+SetTimeOut
+EventLoop Mechanism
+How call backs are created some Basic Examples...
+Callback Hell
+
+
+What is synchronous and Asynchronous?
+Asynchronous?
+
+
+SetTimeOut:
+It is a Inbuilt Asynchronous Function:
+The main Purpose is to display the data after a certain Period Of Time
+syntax:SetTimeOut(()=>{},time in millisec)
+
+console.log("App is starting!!");
+console.log("App is under Construction");
+setTimeout(()=>console.log("This is a testing time"),3000);
+setTimeout(()=>console.log("This is a developemnt review time"),3000);
+console.log("App is under deployment");
+console.log("App Ends!!!");
+
+
+Event Loop Mechanism:
+Callstack
+WebAPI
+Callback Queue
+Event Loop
+
+Callstack:
+It's a Ledgure Which is used to keep the track of the Functions
+It Is the Place where the  actual Code Get's Executed
+
+
+WebAPI:
+This is the Place where the actual TimeConsuming Operations Wait for the Specific Durations
+Once the waiting Period Over it Will be Pushed back to the Queue
+
+Callback Queue:
+It is the place where the Time Consuming Operations are placed One after the another
+
+
+Event loop:
+It is an Intermediatery Between Callstack and Callback Queue
+The Main Purpose of the Event Loop is to check whether the Call stack is empty or Not
+if it is Empty It will be Pushed  to call stack
+
+What is Callback and Uses
+
+The function which is sent as a parameter to the another function
+is nothing but call back function
+
+
+The function which is sent as a parameter is nothing but callback function
+
+Ex:map,reduce,filter,sort,addEventListerner,SetTimeOut
